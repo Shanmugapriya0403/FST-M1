@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--<suite name="FSTTests">
+    <parameter name="username" value="admin" />
+    <parameter name="password" value="password" />
+    <test name="FSTActivities">
+        <classes>
+            <class name="testngpractice.Activity6" />
+        </classes>
+    </test>-->
+  
+<suite name="FSTTests" thread-count="4" parallel="classes">
+    <!-- Comment out groups to run everything -->
+	<!--<groups>
+        <run>
+            <include name="HeaderTests" />
+        </run>
+    </groups>-->
+    <parameter name="username" value="admin" />
+    <parameter name="password" value="password" />
+    <test name="FSTActivities">
+        <classes>
+           <!-- <class name="testngpractice.Activity1" />
+            <class name="testngpractice.Activity2" />
+            <class name="testngpractice.Activity3" />-->
+            <class name="testngpractice.Activity4_DemoOne" />
+            <class name="testngpractice.Activity4_DemoTwo" />
+            <!--<class name="testngpractice.Activity5" />
+            <class name="testngpractice.Activity6" />
+            <class name="testngpractice.Activity7" />-->
+        </classes>
+    </test>
+</suite>
